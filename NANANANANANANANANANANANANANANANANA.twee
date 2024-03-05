@@ -1,0 +1,202 @@
+:: StoryTitle
+NANANANANANANANANANANANANANANANANA
+
+
+:: StoryData
+{
+  "ifid": "653E232A-D7EE-418F-8B1D-640FBF11F083",
+  "format": "Harlowe",
+  "format-version": "3.3.8",
+  "start": "Code thingy thing",
+  "tag-colors": {
+    "You-arrive": "green"
+  },
+  "zoom": 0.6
+}
+
+
+:: BATMAN {"position":"600,400","size":"100,100"}
+<h1 style="color: yellow">BATMAN</h1>
+
+<img src="https://www.freepnglogos.com/uploads/batman-begins-logo-png-20.png" style="width:350px;height:175px; filter: drop-shadow(0px 0px 20px yellow)"</img>
+
+<style>
+	h3{
+    	color: crimson;
+        
+    }
+</style>
+
+[[<h3>START</h3>->Info]]
+(link: "<h3>QUIT</h3>")[<script>window.close()</script>]
+
+
+
+
+:: Chapter 1 {"position":"800,400","size":"100,100"}
+[<h2 style="color: gold;">Chapter 1: </h2><h2 style="color: crimson;">THE JOKER</h2>]
+
+
+
+
+$JokerText[Once upon a time there was a MADMAN!
+
+A MADMAN! who enjoy wreaking HAVOC, and instill massive PAIN and fear in EVERYONE who stand in his PATH!
+
+That man's name is:</p> <h2>THE JOKER</h2>
+
+What this man had done, could be anything and everything imaginable and unimaginable to man's counciousness.
+
+This disgusting man has killed and tortured for the fun of it.
+
+This man made innocent people into monsters and made them do unimaginable things.
+
+Now it is time for BATMAN to step in!
+]
+
+[[To Wayne manor!->Page2]]
+
+
+:: Chapter 2 {"position":"1200,100","size":"100,100"}
+<h1>THE BATSIGNAL IS ACTIVE</h1>
+
+
+
+$Waynetext[Bruce: Alfred!]
+$AlfredText[Alfred: Yes yes Mr.Wayne, i will ready a LEGO piece 6170934 for your return. Now go save the city before it falls to ruins.]
+
+(click: ?page)[==
+[[To the Batmobile->c2Page2]]
+
+
+:: Code thingy thing {"position":"600,200","size":"100,100"}
+(set:$crimson to magenta+red+red+red+white)
+(set: $AlfredText to (font:"Times New Roman")+(text-color:cyan),
+$WayneText to (font:"Arial")+(text-color:purple), 
+$JokerText to (font:"Comic Sans MS")+(text-color: $crimson),
+$RobinText to (font:"Arial")+(text-color: green))
+
+(go-to:"BATMAN")
+(save-game:)))
+
+
+:: Critic {"position":"1600,0","size":"100,100"}
+
+
+
+
+
+<p>
+You caused an old woman to lose her belongings, this is not how Batman acts, but you are in a hurry, so it is almost acceptable.
+</p>
+
+[[Hurry!|c2page3]]
+
+
+:: Info {"position":"700,400","size":"100,100"}
+
+
+
+
+
+
+In this interactive story "Game" you will play as BATMAN or atleast control certain actions that will lead to different outcomes.
+
+
+[[Onwards->Chapter 1]]
+
+
+:: Page2 {"position":"900,400","size":"100,100"}
+
+
+
+
+
+$AlfredText[Alfred: Good evening Mr.Wayne, here is your coffe]
+(click: ?page)[==
+$WayneText[Bruce: Thank you Alfred, may you put it on the counter for me?]
+(click: ?page)[==
+$AlfredText[Alfred: Very well sir.]
+
+(click: ?page)[==
+[[Drink the coffe|Page3]]
+[[Go to the Batcave|Page3.5]]
+
+
+:: Page3 {"position":"1000,100","size":"100,100"}
+
+
+
+
+
+
+
+$waynetext[Bruce: I have some errands to run, may you see to it that Robin is practising his martial arts Alfred?]
+(click: ?page)[==
+$AlfredText[Alfred: Why of course I will. Take your time Bruce.]
+
+(click: ?page)[==
+[[Some time passes->Chapter 2]]
+
+
+:: Page3.5 {"position":"1000,300","size":"100,100"}
+
+
+
+
+
+
+$robintext[Robin: Yo Bruce! Are you ]
+
+
+:: c2Page2 {"position":"1400,100","size":"100,100"}
+
+
+
+
+
+<p>
+On your way to city hall, you see something that looks quite suspicious.
+It look like someone is being robbed and they are calling for help.
+</p>
+
+Do you [[help|robber fight]] 
+(click: ?page)[==
+Or do you [[ignore|Critic]]
+
+
+
+:: c2page3 [You-arrive] {"position":"1800,400","size":"100,100"}
+
+
+
+
+
+
+<p>The city governor seem pleased with your arrival, but he also seem worried, as The Joker has apparently placed dosens plastic explosives in the Gotham sewers.</p>
+
+
+:: robber fight {"position":"1600,200","size":"100,100"}
+
+
+
+
+
+<p>
+Since you are in the batmobile and it would be a waste of time to jump out, you just shoot a capturing net that wraps around the perp and you are on your way to the city hall.
+</p>
+
+[[Hurry!|c2page3]]
+
+
+:: StoryStylesheet [stylesheet]
+p {
+color: crimson;
+}
+h1, h2, h3 {
+color: gold;
+}
+
+tw-link {
+color: orange;
+}
