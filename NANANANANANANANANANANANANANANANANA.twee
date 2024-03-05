@@ -149,6 +149,10 @@ $AlfredText[Alfred: Why of course I will. Take your time Bruce.]
 $robintext[Robin: Yo Bruce! Are you ]
 
 
+:: Untitled Passage {"position":"2000,400","size":"100,100"}
+
+
+
 :: c2Page2 {"position":"1400,100","size":"100,100"}
 
 
@@ -174,6 +178,9 @@ Or do you [[ignore|Critic]]
 
 
 <p>The city governor seem pleased with your arrival, but he also seem worried, as The Joker has apparently placed dosens plastic explosives in the Gotham sewers.</p>
+
+
+<p>Governor: You have to save the city Batman!</p>
 
 
 :: robber fight {"position":"1600,200","size":"100,100"}
